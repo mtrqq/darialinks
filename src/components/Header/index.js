@@ -1,6 +1,5 @@
 import React from 'react';
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 import styles from './styles.module.css';
@@ -15,7 +14,7 @@ export default function Header() {
             Rainbow placeholder
           </h1>
           <p className="hero__subtitle">
-            Generate QR codes easily and quickly with our QR Code Generator.
+            ✨ Generate QR codes effortlessly and with style ✨
           </p>
         </div>
       </header>
