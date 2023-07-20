@@ -1,0 +1,74 @@
+/* styles.module.css */
+
+/* Container styles */
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Heading styles */
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Input styles */
+.input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Button styles */
+.button {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-color: var(--ifm-color-primary-dark);
+}
+
+.button:hover {
+  background-color: var(--ifm-color-primary-darkest);
+}
+
+/* QR code container styles */
+.qrCodeContainer {
+  margin-top: 20px;
+}
+
+/* QR code image styles */
+.qrCodeImage {
+  max-width: 35%;
+  margin-bottom: 10px;
+}
+
+/* Download button container styles */
+.downloadButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+/* Download button styles */
+.downloadButton {
+  background-color: var(--ifm-color-primary-dark);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.downloadButton:not(:last-child) {
+  margin-right: 10px;
+}
+
+.downloadButton:hover {
+  background-color: var(--ifm-color-primary-darkest);
+}

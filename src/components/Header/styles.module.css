@@ -1,0 +1,16 @@
+/* styles.module.css */
+
+/* Header container styles */
+.heroBanner {
+    padding: 1rem 0; /* You can adjust this value to control vertical spacing */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  @media screen and (max-width: 996px) {
+    .heroBanner {
+      padding: 0.5rem;
+    }
+  }
+  
