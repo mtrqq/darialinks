@@ -10,7 +10,7 @@ export default function QrGenerator() {
 
   const generateQRCode = async () => {
     try {
-      const pngDataUrl = await QRCode.toDataURL(text, { width: 1080, margin: 0 });
+      const pngDataUrl = await QRCode.toDataURL(text, { width: 1080, margin: 0, type: "image/png", color: { light: "#0000" } });
       setQrCodeDataUrl(pngDataUrl);
 
       const svgDataUrl = await QRCode.toString(text, { type: 'svg' }); // Generate SVG data URL
@@ -29,21 +29,21 @@ export default function QrGenerator() {
 
   const downloadQRCodeSVG = () => {
     const blob = new Blob([svgContent], { type: 'image/svg+xml' });
-  
+
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
     link.download = 'qrcode.svg';
     link.click();
-  
+
     URL.revokeObjectURL(link.href);
   };
-  
+
 
   return (
     <div className={styles.container}>
       <h1 className={styles.heading}>QR Code Generator</h1>
       <input
-        type="text" 
+        type="text"
         placeholder="Enter text..."
         value={text}
         onChange={(e) => setText(e.target.value)}
